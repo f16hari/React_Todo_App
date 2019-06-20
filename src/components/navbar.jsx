@@ -11,6 +11,7 @@ class NavBar extends Component {
             onSubmit={this.props.onSubmit}
           >
             <input
+              id="inputdata"
               className="form-control w-50"
               type="text"
               placeholder="Enter new todo item ....."

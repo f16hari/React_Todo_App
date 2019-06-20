@@ -4,10 +4,10 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import "./list.css";
 
-class List extends Component {
+class CList extends Component {
   state = {
     trash: "grey",
-    tick: "grey"
+    tick: "green"
   };
   handleTrashColor = () => {
     let trash = this.state.trash;
@@ -29,7 +29,7 @@ class List extends Component {
             {this.props.data}
             <button
               className="btn action-buttons"
-              onClick={this.props.completeList}
+              onClick={this.props.doAgain}
               onMouseOver={this.handleTickColor}
               onMouseOut={this.handleTickColor}
             >
@@ -59,4 +59,4 @@ class List extends Component {
   }
 }
 
-export default List;
+export default CList;
