@@ -105,18 +105,24 @@ class App extends Component {
           onChange={this.handleChange}
           pending={this.state.pending}
         />
-        <Pending
-          pending={this.state.pending}
-          deleteList={this.handleDeletePending}
-          completeList={this.handleComplete}
-          empty={this.state.empty1}
-        />
-        <Completed
-          completed={this.state.completed}
-          deleteList={this.handleDeleteCompleted}
-          doagain={this.handleDoAgain}
-          empty={this.state.empty2}
-        />
+        <div>
+          <Pending
+            pending={this.state.pending}
+            deleteList={this.handleDeletePending}
+            completeList={this.handleComplete}
+            empty={this.state.empty1}
+          />
+          <Completed
+            completed={this.state.completed}
+            deleteList={this.handleDeleteCompleted}
+            doagain={this.handleDoAgain}
+            empty={this.state.empty2}
+          />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
       </React.Fragment>
     );
   }

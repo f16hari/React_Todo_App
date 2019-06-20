@@ -26,7 +26,7 @@ class List extends Component {
       <React.Fragment>
         <div className="list p-3 mb-3">
           <span>
-            {this.props.data}
+            <label id="data">{this.props.data}</label>
             <button
               className="btn action-buttons"
               onClick={this.props.completeList}
