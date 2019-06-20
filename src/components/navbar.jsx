@@ -17,6 +17,7 @@ class NavBar extends Component {
               placeholder="Enter new todo item ....."
               aria-label="Search"
               onChange={this.props.onChange}
+              autoComplete="off"
             />
             <button className="btn btn-primary m-3" type="submit">
               ADD
